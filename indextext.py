@@ -5,3 +5,4 @@ resultado1 = mi_texto.rindex("n") #derecha a izquierda
 
 print(resultado)
 print(resultado1)
+
