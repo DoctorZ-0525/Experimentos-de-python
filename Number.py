@@ -15,3 +15,13 @@ apellido = input("ingresa tu primer apellido: ")
 #pinto el resultado de forma ordenada con (f) para entender mejor el codigo
 print(f"Tu nombre completo es: {nombre} {apellido}")
 
+
+#bolleanos this simple
+#<
+#>
+#==
+#>=<
+#!=
+y = 30 <= 20
+
+print(y)
