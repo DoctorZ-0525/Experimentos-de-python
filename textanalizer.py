@@ -34,9 +34,8 @@ print(f"Hemos encontrado la letra '{letras[0]}' repetida {cantidad1} veces")
 print(f"Hemos encontrado la letra '{letras[1]}' repetida {cantidad2} veces")
 print(f"Hemos encontrado la letra '{letras[2]}' repetida {cantidad3} veces")
 
-python = "python" in textorem
-print("la palabra python en el texto es:", python) #encontrar PYTHON en el texto
-#aqui lo que hago es verificar si las palabras que busco estan y en que lugar del texto estan
+python = "python" in textorem #busco python en el texto
+print("la palabra python en el texto es:", python) #pinto si esta o no estas
 
 #letras de inicio y fin
 print("LETRAS DE INICIO Y DE FIN")
