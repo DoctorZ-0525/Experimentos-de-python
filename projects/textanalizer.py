@@ -15,20 +15,28 @@
 
 texto = input("Ingresa aqui tu texto: ") #AÑADIENDO TEXTO 
 textorem = texto.lower()
-print("QUE PALABRA DESEAS ENCONTRAR EN EL TEXTO: ") #Que deseo encontrar
-letras = []
-#VAR de palabra que deceo encontrar
-letras.append(input("Ingresa la primera letra: ".lower()))
-letras.append(input("Ingresa la segunda letra: ".lower()))
-letras.append(input("Ingresa la tercera letra: ".lower()))
+letras = [] #variables para almacenas letras
+palabras = textorem.split() #VARIABLE PARA SEPARAR PALABRAS DESDE CADA ESPACIO
+print("\n") #salto de linea 
+print("QUE LETRAS DESEAS ENCONTRAR EN EL TEXTO: ") #Que letra deseo encontrar
+
+#letras que deseo encontrar
+letras.append(input("Ingresa la primera letra: ".lower())) #INDICE 1 # lo que hacemos aqui es almacenar la letra en la list 
+letras.append(input("Ingresa la segunda letra: ".lower())) #INDICE 2
+letras.append(input("Ingresa la tercera letra: ".lower())) #INDICE 3
+
 #cantidad de letras en el texto
 cantidad1 = textorem.count(letras[0])
 cantidad2 = textorem.count(letras[1])
 cantidad3 = textorem.count(letras[2])
 
-
 #resultados
-print("TU TEXTO TIENE",len(textorem),"LETRAS") #visualizo cuantos caracteres tiene mi texto
+print("RESULTADOS:")
+print(f"TU TEXTO TIENE '{len(textorem)}' CARACTERES") #visualizo cuantos caracteres tiene mi texto
+
+print(f"TU TEXTO TIENE '{len(palabras)}' PALABRAS") #Busco cuantas palabras tiene el texto
+
+
 #visualizo cuantas veces se repiten las palabras que estoy buscando
 print(f"Hemos encontrado la letra '{letras[0]}' repetida {cantidad1} veces")
 print(f"Hemos encontrado la letra '{letras[1]}' repetida {cantidad2} veces")
@@ -38,10 +46,12 @@ python = "python" in textorem #busco python en el texto
 print("la palabra python en el texto es:", python) #pinto si esta o no estas
 
 #letras de inicio y fin
+print("\n")
 print("LETRAS DE INICIO Y DE FIN")
 letra_inicio = textorem[0]
 letra_final = textorem[-1]
 print(f"La letra inicial es '{letra_inicio}' y la letra final es '{letra_final}'")
 
-print("SI TU TEXTO ESTUVIERA INVERTIDO SE VERIA ASI")
+print("\n") #salto de linea 
+print("SI TU TEXTO ESTUVIERA INVERTIDO SE VERIA ASI: ")
 print(textorem[::-1]) #invertir texto (dislexia) XD
