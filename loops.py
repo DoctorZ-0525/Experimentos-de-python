@@ -1,5 +1,6 @@
 #loops utilizacion del for
 #VAR que necesito
+print("CODIGO #1")
 list_nombres = ["julian","andrea","camila","camilo"]
 
 letra = input("letra del nombre que deseas buscar: ") #input (ingreso la informacon que busco)
@@ -10,8 +11,13 @@ for nom in list_nombres: #por cada nombre en la lista en la lista de nombres
     else: #si no comienza por ninguna letra
         print(f"No comienza con la {letra}") #pinto los nombres en la lista que no empiezen con la letra requerida
 
-
-
 #for nombre in list_nombres:
    # num_nombre = list_nombres.index(nombre) + 1
     #print(f"Hola nombre {num_nombre}: {nombre}") 
+print("\n")
+#DESMEMBREDOR DE TEXTO
+print("CODIGO #2")
+palabra = input("ingresa la palabra que deceas desarmar: ")
+
+for letra in palabra:
+    print(letra)
