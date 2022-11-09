@@ -17,7 +17,7 @@ for nom in list_nombres: #por cada nombre en la lista en la lista de nombres
 print("\n")
 #DESMEMBREDOR DE TEXTO
 print("CODIGO #2")
-palabra = input("ingresa la palabra que deceas desarmar: ")
+palabra = input("ingresa la palabra que deceas desarmar: ") #ingreso mi texto (no tengo que transformarlo porque sigue siendo un string)
 
-for letra in palabra:
+for letra in palabra: #por cada letra que alla en palabra, imprimire la letra que corresponde
     print(letra)
