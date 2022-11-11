@@ -19,3 +19,12 @@ palabra = input("ingresa la palabra que deceas desarmar: ") #ingreso mi texto (n
 
 for letra in palabra: #por cada letra que alla en palabra, imprimire la letra que corresponde
     print(letra)
+
+for numero in range(1,31):
+    print(numero)
+
+#Rangos
+suma_cuadrados = 0
+ 
+for i in range(1,16):
+    suma_cuadrados += i**2
