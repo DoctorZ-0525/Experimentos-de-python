@@ -9,11 +9,11 @@
 #tambien podria hacer esto para que sea mas general insertando los valores y luego pintarlos como aqui:
 
 #ingreso valores
-nombre = input("Ingresa tu primer nombre: ")
-apellido = input("ingresa tu primer apellido: ")
+#nombre = input("Ingresa tu primer nombre: ")
+#apellido = input("ingresa tu primer apellido: ")
 
 #pinto el resultado de forma ordenada con (f) para entender mejor el codigo
-print(f"Tu nombre completo es: {nombre} {apellido}")
+#print(f"Tu nombre completo es: {nombre} {apellido}")
 
 
 #bolleanos this simple
@@ -22,6 +22,24 @@ print(f"Tu nombre completo es: {nombre} {apellido}")
 #==
 #>=<
 #!=
-y = 30 <= 20
+#y = 30 <= 20
 
-print(y)
+#print(y)
+
+#################################################################################################
+
+#ENUMERATOR
+
+lista = ["a","b","c","d","e"]
+indice = 0
+
+for item in lista:
+    print(indice, item)
+    indice += 1
+
+#el eunumerador se puede hacer de una forma mas elegante
+
+lista1 = ["a","b","c","d","e"]
+
+for indice,item in enumerate(lista1):
+    print(indice,item)
