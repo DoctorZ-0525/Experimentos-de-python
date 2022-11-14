@@ -1,4 +1,5 @@
 #lo que hacemos aqui e convinar varias listas
+<<<<<<< HEAD
 
 #creamos 2 listas diferentes
 
@@ -16,3 +17,12 @@ combinados = list(zip(nombres,edades,ciudades))
 
 for nombres,edades,ciudades in combinados:
     print(f"{nombres} tiene {edades} y vive en {ciudades}")
+=======
+capitales = ["Berlín", "Tokio", "París", "Helsinki", "Ottawa", "Canberra"]
+paises = ["Alemania", "Japón", "Francia", "Finlandia", "Canadá", "Australia"]
+
+combinacion = zip(paises,capitales)
+
+for pais,capital in combinacion:
+    print(f"La capital de {pais} es {capital}")
+>>>>>>> 429d9ed2c1257b47feb6ca55d7bafdac901ca2d0
