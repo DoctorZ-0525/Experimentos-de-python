@@ -27,8 +27,8 @@ print("Resultado:", resultado)
 
 print("CALCULADORA PARA DIVIDIR EN 2 DIGITOS")
 
-num1 = input("primer numero")
-num2 = input("segundo numero")
+num1 = input("primer numero: ")
+num2 = input("segundo numero: ")
 
 ressultado = int(num1) // int(num2)
 
