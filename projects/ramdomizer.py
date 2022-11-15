@@ -28,5 +28,5 @@ elif numero1 >= aleatorio:
     print("estas un poco por encima")
 
 #INGRESA EL SEGUNDO NUMERO
-#primer problema hay que hacer un tipo de bucle
+
 print("esto es una prueba")
