@@ -23,15 +23,15 @@ while intentos < 8:
     numero = int(input("Dame un numero: "))
     intentos += 1
 
-    if numero == aleatorio:
-        print(f"acertas el numero {usuario} en {intentos} intentos")
-        break
-
-    if numero < aleatorio:
-        print("estas un poco por debajo")
-
     if numero > aleatorio:
         print("estas un poco por arriba")
+
+    elif numero < aleatorio:
+        print("estas un poco por debajo")
+
+    else:
+        print(f"{usuario} has acertardo con un total de {intentos}")
+        break
     
-if intentos !=  numero:
+if intentos ==  8:
     print(f"{usuario} ya llegaste a los {intentos} intentos")
