@@ -11,24 +11,27 @@
 
 from random import *
 
+intentos = 0
+numero = 0
 usuario = input("Nombre del jugador: ")
 aleatorio = randint(1,100)
 
-#INGRESA EL PRIMER NUMERO
 
 print("Tengo un numero del 1 al 100 cual crees que pueda ser.")
-print(aleatorio)
-numero1 = int(input("primer numero: "))
 
-if numero1 == aleatorio:
-    print(f"Acertaste, te tomo 1 intento y el numero era {aleatorio}")
-elif numero1 < aleatorio:
-    print("estas un poco por debajo")
-elif numero1 > aleatorio:
-    print("estas un poco por encima")
+while intentos < 8:
+    numero = int(input("Dame un numero: "))
+    intentos += 1
 
+    if numero == aleatorio:
+        print(f"acertas el numero {usuario} en {intentos} intentos")
+        break
 
+    if numero < aleatorio:
+        print("estas un poco por debajo")
 
-#INGRESA EL SEGUNDO NUMERO
-
-print("Dame tu segudo numero: ")
+    if numero > aleatorio:
+        print("estas un poco por arriba")
+    
+if intentos !=  numero:
+    print(f"{usuario} ya llegaste a los {intentos} intentos")
