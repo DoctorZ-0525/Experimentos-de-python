@@ -34,4 +34,4 @@ while intentos < 8:
         break
     
 if intentos ==  8:
-    print(f"{usuario} ya llegaste a los {intentos} intentos")
+    print("Bien juagado nos vemos en otra {usuario}")
