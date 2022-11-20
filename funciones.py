@@ -22,3 +22,10 @@ def invertir_palabra(palabra):
     palabra1 = palabra.upper()
     
     return palabra1
+
+def suma(numero1,numero2):
+    sumar = numero1 + numero2
+
+    return sumar
+
+print(suma(1,1))
