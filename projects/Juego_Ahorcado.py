@@ -1,5 +1,5 @@
 from random import choice
-
+from os import system
 palabras = ['panadero', 'pintura', 'helicoptero', 'agua']
 letras_correctas = []
 letras_incorrectas = []
