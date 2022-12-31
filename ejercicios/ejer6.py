@@ -18,5 +18,3 @@ def prueba_suerte():
     return int(intentos)
 
 #comprobamos los intentos
-
-def 
